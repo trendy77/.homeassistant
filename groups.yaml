@@ -1,0 +1,44 @@
+default_view:
+  view: yes
+  icon: mdi:home 
+  entities:
+    group.lounge
+    group.bath
+    group.kitchen
+    group.bed
+    group.people
+    group.climate
+kitchen:
+  name: kitchen
+  entities:
+    sensor.kitchmotion
+    light.kitchen
+bath:
+  name: bath
+  entities:
+    sensor.bathmotion
+    light.bath
+bed:
+  name: bed
+  icon: mdi:account-multiple
+  view: yes
+  entities:
+    input_boolean.notify_home
+    camera.demo_camera
+    device_tracker.m9iv
+    group.garden
+climate:
+  name: climate
+  view: no
+  entities:
+    sensor.lounge_temp
+    sensor.lounge_humid
+
+devices:
+  name: devices
+  view: yes
+  entities:
+    device_tracker.netgear
+    device_tracker.m9iv
+    device_tracker.nexus
+    device_tracker.tpengalaxy

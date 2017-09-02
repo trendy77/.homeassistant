@@ -1,0 +1,70 @@
+2017-09-02 15:23:11 ERROR (SyncWorker_0) [homeassistant.util.yaml] YAML file C:\Users\trendy\AppData\Roaming\.homeassistant\automations.yaml contains duplicate key "alias". Check lines 2 and 13.
+2017-09-02 15:23:11 ERROR (SyncWorker_0) [homeassistant.util.yaml] YAML file C:\Users\trendy\AppData\Roaming\.homeassistant\automations.yaml contains duplicate key "trigger". Check lines 3 and 14.
+2017-09-02 15:23:11 ERROR (SyncWorker_0) [homeassistant.util.yaml] YAML file C:\Users\trendy\AppData\Roaming\.homeassistant\automations.yaml contains duplicate key "action". Check lines 6 and 17.
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.config] Invalid config for [mqtt]: [server] is an invalid option for [mqtt]. Check: mqtt->mqtt->server. (See C:\Users\trendy\AppData\Roaming\.homeassistant\configuration.yaml, line 100). Please check the docs at https://home-assistant.io/components/mqtt/
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.setup] Setup failed for mqtt: Invalid config.
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.config] Invalid config for [http]: [url] is an invalid option for [http]. Check: http->http->url. (See C:\Users\trendy\AppData\Roaming\.homeassistant\configuration.yaml, line 19). Please check the docs at https://home-assistant.io/components/http/
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.setup] Setup failed for http: Invalid config.
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of api. Setup failed for dependencies: http
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.setup] Setup failed for api: Could not setup all dependencies.
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of websocket_api. Setup failed for dependencies: http
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.setup] Setup failed for websocket_api: Could not setup all dependencies.
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of frontend. Setup failed for dependencies: api, websocket_api
+2017-09-02 15:23:11 ERROR (MainThread) [homeassistant.setup] Setup failed for frontend: Could not setup all dependencies.
+2017-09-02 15:23:11 WARNING (Recorder) [homeassistant.components.recorder] Ended unfinished session (id=6 from 2017-09-02 05:21:43.799923)
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of history. Setup failed for dependencies: http
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for history: Could not setup all dependencies.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.loader] Unable to find component zones
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for zones: Component not found.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.loader] Unable to find component device_tracker.android
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.loader] Unable to find component device_tracker.android
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.loader] Unable to find component device_tracker.android
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: not a valid value for dictionary value @ data['trigger'][0]['event']. Got None. (See C:\Users\trendy\AppData\Roaming\.homeassistant\configuration.yaml, line 144). Please check the docs at https://home-assistant.io/components/automation/
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.config] Invalid config for [media_player.kodi]: some but not all values in the same group of inclusion 'auth' @ data[<auth>]. Got None. (See ?, line ?). Please check the docs at https://home-assistant.io/components/media_player.kodi/
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.config] Invalid config for [group]: Entity ID device_tracker.netgear device_tracker.m9iv device_tracker.nexus device_tracker.tpengalaxy is an invalid entity id for dictionary value @ data['group']['devices']['entities']. Got 'device_tracker.netgear device_tracker.m9iv device_tracker.nexus device_tracker.tpengalaxy'
+Entity ID group.lounge group.bath group.kitchen group.bed group.people group.climate is an invalid entity id for dictionary value @ data['group']['default_view']['entities']. Got 'group.lounge group.bath group.kitchen group.bed group.people group.climate'
+Entity ID input_boolean.notify_home camera.demo_camera device_tracker.m9iv group.garden is an invalid entity id for dictionary value @ data['group']['bed']['entities']. Got 'input_boolean.notify_home camera.demo_camera device_tracker.m9iv group.garden'
+Entity ID sensor.bathmotion light.bath is an invalid entity id for dictionary value @ data['group']['bath']['entities']. Got 'sensor.bathmotion light.bath'
+Entity ID sensor.kitchmotion light.kitchen is an invalid entity id for dictionary value @ data['group']['kitchen']['entities']. Got 'sensor.kitchmotion light.kitchen'
+Entity ID sensor.lounge_temp sensor.lounge_humid is an invalid entity id for dictionary value @ data['group']['climate']['entities']. Got 'sensor.lounge_temp sensor.lounge_humid'. (See C:\Users\trendy\AppData\Roaming\.homeassistant\configuration.yaml, line 143). Please check the docs at https://home-assistant.io/components/group/
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for group: Invalid config.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of logbook. Setup failed for dependencies: frontend
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for logbook: Could not setup all dependencies.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of config. Setup failed for dependencies: http
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for config: Could not setup all dependencies.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of light. Setup failed for dependencies: group
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for light: Could not setup all dependencies.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of automation. Setup failed for dependencies: group
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for automation: Could not setup all dependencies.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of media_player. Setup failed for dependencies: http
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for media_player: Could not setup all dependencies.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of conversation. Setup failed for dependencies: http
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for conversation: Could not setup all dependencies.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of device_tracker. Setup failed for dependencies: group
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for device_tracker: Could not setup all dependencies.
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.components.sensor] Error while setting up platform arest
+Traceback (most recent call last):
+  File "c:\users\trendy\appdata\local\programs\python\python36\lib\site-packages\homeassistant\helpers\entity_component.py", line 164, in _async_setup_platform
+    SLOW_SETUP_MAX_WAIT, loop=self.hass.loop)
+  File "c:\users\trendy\appdata\local\programs\python\python36\lib\asyncio\tasks.py", line 352, in wait_for
+    return fut.result()
+  File "c:\users\trendy\appdata\local\programs\python\python36\lib\asyncio\futures.py", line 244, in result
+    raise self._exception
+  File "c:\users\trendy\appdata\local\programs\python\python36\lib\concurrent\futures\thread.py", line 55, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "c:\users\trendy\appdata\local\programs\python\python36\lib\site-packages\homeassistant\components\sensor\arest.py", line 54, in setup_platform
+    response = requests.get(resource, timeout=10).json()
+  File "c:\users\trendy\appdata\local\programs\python\python36\lib\site-packages\requests\models.py", line 885, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "c:\users\trendy\appdata\local\programs\python\python36\lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "c:\users\trendy\appdata\local\programs\python\python36\lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "c:\users\trendy\appdata\local\programs\python\python36\lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Unable to setup dependencies of tts. Setup failed for dependencies: http
+2017-09-02 15:23:12 ERROR (MainThread) [homeassistant.setup] Setup failed for tts: Could not setup all dependencies.
+2017-09-02 15:23:13 ERROR (SyncWorker_2) [homeassistant.components.notify.telstra] Error obtaining authorization from Telstra API
+NoneType: None
+2017-09-02 15:23:13 ERROR (MainThread) [homeassistant.components.notify] Failed to initialize notification service telstra

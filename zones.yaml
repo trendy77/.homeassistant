@@ -1,0 +1,23 @@
+####################
+## ZONES
+####################
+
+zone:
+  name: Home
+  latitude: 37
+  longitude: -121  
+  radius: 200
+  icon: mdi:home
+
+zone 2:
+  name: Bath
+  latitude: 37
+  longitude: -121
+  radius: 100
+
+zone 3:
+  name: Kitch
+  latitude: 37
+  longitude: -122
+  radius: 95
+

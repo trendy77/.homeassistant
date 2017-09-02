@@ -1,0 +1,146 @@
+# VER 4.2 1/8/17
+## no customisations
+
+homeassistant:
+  name: TSMARTCromwell
+  latitude: 40.4981
+  longitude: -74.3194
+  elevation: 19
+  unit_system: Metric
+  time_zone: Australia/Melbourne
+config:
+#################################
+#discovery:
+sun:
+#updater:
+history:
+frontend:
+logbook:
+http:
+  url: http://trendy.chickenkiller.com
+  api_password: Joker999
+  server_port: 8123
+#  ssl_certificate: /etc/letsencrypt/live/example.com/fullchain.pem#  ssl_key: /etc/letsencrypt/live/example.com/privkey.pem
+
+
+# https://maker.ifttt.com/use/bxRjKjTWd3zf5CMs-T76Hg
+
+ifttt:
+  key: bxRjKjTWd3zf5CMs-T76Hg
+
+
+media_player 1:
+  platform: plex
+  username: trendy811
+  password: westside
+  friendly_name: plex
+
+media_player 2:  
+  platform: cast
+  friendly_name: loungeCast
+  entity_picture: /local/chromecast.jpg
+
+media_player 3:
+  platform: kodi
+  url: http://192.168.0.102:8080/jsonrpc
+  user: kodi
+  password: 
+
+#### HUE LIGHTS ##################################
+
+light:
+  platform: hue
+  friendly_name: hue
+  host: 192.168.0.101
+
+#### TIME/DATE ##################################
+#switch:
+#  platform: wemo
+#  friendly_name: WeMo
+
+#### NOTIFICATIONS  ##################################
+
+notify 1:
+  platform: pushbullet
+  api_key: o.ilRCllIpKhxOMsNscbySEyv9GXzAzYNg
+  friendly_name: push
+
+notify 2:
+  platform: facebook
+  page_access_token: 6013598acf467d04ee5115b4a27421de
+  friendly_name: fbmsg
+
+notify 3:
+  platform: telstra
+  friendly_name: sms
+  consumer_key: I8mEVTowUufGrOtMg8fMJkhVWqbwqD6v
+  consumer_secret: 8WABpYQQhDmAkxp9
+  phone_number: +61404095091
+    
+#### BROKERS ##################################
+
+sensor:
+  platform: arest
+  friendly_name: rest
+  resource: http://trendy.chickenkiller.com/endpoint
+
+#sensor 2:
+#  platform: worldclock
+ # time_zone: England/London
+ # friendly_name: 'GMT'
+
+#sensor 3:
+#  platform: worldclock
+#  time_zone: America/Los_Angeles
+#  friendly_name: 'West - LA'
+
+tts:
+  platform: google
+
+mqtt:
+  server: m12.cloudmqtt.com
+  username: yklkyogj
+  password: fe0xxxhDMx2t
+  port: 14303
+
+  
+mqtt 2:
+  server: 127.0.0.1
+  username: trendy
+  password: Joker999
+  port: 1883
+
+  
+device_tracker 1:
+  platform: netgear
+  friendly_name: telstra_gateway
+  host: 192.168.0.1
+  username: admin
+  password: admin101
+  interval_seconds: 10
+  consider_home: 180
+  track_new_devices: yes 
+  
+device_tracker 2:
+  platform: android
+  friendly_name: m9iv
+
+device_tracker 3:
+  platform: android
+  friendly_name: tpengalaxy  
+  
+device_tracker 4:
+  platform: android
+  friendly_name: nexus
+  
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+  intents:
+    ShoppingListAddItem:
+    - Add {item} to my shopping list
+    LightsChange:
+    - Turn {light} {state} 
+
+group: !include groups.yaml
+automation: !include automations.yaml
+zones: !include zones.yaml

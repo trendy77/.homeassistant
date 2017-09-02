@@ -1,0 +1,23 @@
+# automation for HA
+
+alias: Startup Notification
+trigger:
+  platform: homeassistant
+  event: start
+action:
+  service: script.ifttt_notify
+  data_template:
+    value1: 'HA Status:'
+    value2: "{{ trigger.event.data.entity_id.split('_')[1] }} is "
+    value3: "{{ trigger.event.data.to_state.state }}"
+
+alias: Shutdown Notification
+trigger:
+  platform: homeassistant
+  event: stop
+action:
+  service: script.ifttt_notify
+  data_template:
+    value1: 'HA Status:'
+    value2: "{{ trigger.event.data.entity_id.split('_')[1] }} is "
+    value3: "{{ trigger.event.data.to_state.state }}"
